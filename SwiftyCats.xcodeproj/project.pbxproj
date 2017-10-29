@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E63576A31FA6876E006CABDA /* CatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63576A21FA6876E006CABDA /* CatCollectionViewCell.swift */; };
 		E64C5A421FA5117F003AD860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C5A411FA5117F003AD860 /* AppDelegate.swift */; };
 		E64C5A441FA5117F003AD860 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64C5A431FA5117F003AD860 /* ViewController.swift */; };
 		E64C5A471FA5117F003AD860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64C5A451FA5117F003AD860 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E63576A21FA6876E006CABDA /* CatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCollectionViewCell.swift; sourceTree = "<group>"; };
 		E64C5A3E1FA5117F003AD860 /* SwiftyCats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyCats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E64C5A411FA5117F003AD860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E64C5A431FA5117F003AD860 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		E64C5A351FA5117F003AD860 = {
 			isa = PBXGroup;
 			children = (
+				E63576A21FA6876E006CABDA /* CatCollectionViewCell.swift */,
 				E64C5A401FA5117F003AD860 /* SwiftyCats */,
 				E64C5A3F1FA5117F003AD860 /* Products */,
 			);
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E64C5A4A1FA5117F003AD860 /* SwiftyCats.xcdatamodeld in Sources */,
+				E63576A31FA6876E006CABDA /* CatCollectionViewCell.swift in Sources */,
 				E64C5A441FA5117F003AD860 /* ViewController.swift in Sources */,
 				E64C5A421FA5117F003AD860 /* AppDelegate.swift in Sources */,
 			);

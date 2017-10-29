@@ -27,15 +27,29 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="j6C-hr-lgA">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="j6C-hr-lgA" customClass="CatCollectionViewCell" customModule="SwiftyCats" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nJW-PI-qxF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="nJW-PI-qxF" secondAttribute="trailing" id="5Em-26-ulw"/>
+                                            <constraint firstItem="nJW-PI-qxF" firstAttribute="top" secondItem="j6C-hr-lgA" secondAttribute="top" id="7Rg-dz-nrj"/>
+                                            <constraint firstItem="nJW-PI-qxF" firstAttribute="leading" secondItem="j6C-hr-lgA" secondAttribute="leading" id="IIf-tR-5jv"/>
+                                            <constraint firstAttribute="bottom" secondItem="nJW-PI-qxF" secondAttribute="bottom" id="gYs-yP-KiA"/>
+                                        </constraints>
                                         <size key="customSize" width="150" height="150"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="nJW-PI-qxF" id="DdP-PF-uwp"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -55,6 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

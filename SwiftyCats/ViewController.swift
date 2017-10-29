@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     @IBOutlet weak var collectionView: UICollectionView!
     let myLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+    let catsArr = ["hellokitty1", "hellokitty2", "hellokitty3"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +29,14 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
 //        myLayout.minimumLineSpacing = 10
 //        myLayout.itemSize = CGSize(width: 150, height: 150)
 //    }
+
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return catsArr.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 360, height: 150)
+        return CGSize(width: 150, height: 150)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -42,13 +44,17 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CatCollectionViewCell
+        
+        cell.imageView.image = UIImage(named: catsArr[indexPath.row])
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
+    
     
     
 
